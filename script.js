@@ -91,12 +91,17 @@ function showSection(id, el) {
   document.getElementById(id).style.display =
     (id === "home") ? "flex" : "block";
 
-  // active nav
   document.querySelectorAll("nav ul li").forEach(li => {
     li.classList.remove("active");
   });
 
   el.classList.add("active");
+
+  // 🔥 trigger animations
+  if (id === "skills") {
+    animateBars();
+    animateCircles();
+  }
 }
 
 
@@ -114,3 +119,32 @@ document.querySelectorAll("button, .icons i, .card").forEach(el => {
   });
 
 });
+function animateCircles() {
+  const circles = document.querySelectorAll(".circle-skill");
+
+  circles.forEach(circle => {
+    let percent = circle.getAttribute("data-percent");
+    let start = 0;
+
+    let interval = setInterval(() => {
+      start++;
+
+      circle.style.background =
+        `conic-gradient(cyan ${start * 3.6}deg, #222 0deg)`;
+
+      if (start >= percent) {
+        clearInterval(interval);
+      }
+    }, 15);
+  });
+}
+function animateBars() {
+  const bars = document.querySelectorAll(".progress div");
+
+  bars.forEach(bar => {
+    let width = bar.getAttribute("data-width");
+    setTimeout(() => {
+      bar.style.width = width;
+    }, 200);
+  });
+}
