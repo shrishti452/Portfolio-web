@@ -1,129 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-
-<div class="cursor"></div>
-<div class="cursor-dot"></div>
-
-<div id="preloader">
-  <h1 class="loader-text">Shrishti</h1>
-  <div class="dots">
-    <span></span><span></span><span></span>
-  </div>
-</div>
-
-<div id="main-content">
-
-  <!-- Navbar -->
-  <nav>
-    <h2>Portfolio</h2>
-    <ul>
-      <li class="active" onclick="showSection('home', this)">Home</li>
-      <li onclick="showSection('skills', this)">Skills</li>
-    </ul>
-  </nav>
-
-  <!-- HOME -->
-  <section class="home section" id="home">
-    <div class="left">
-      <div class="circle">👩‍💻</div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div id="preloader">
+      <h1 class="loader-text">Shrishti</h1>
+      <div class="dots"><span></span><span></span><span></span></div>
     </div>
-
-    <div class="right">
-      <h3>Hi, I'm</h3>
-      <h1 class="gradient-text">Shrishti</h1>
-      <h2 class="typing"></h2>
-
-      <div class="buttons">
-        <button class="btn primary">View Projects</button>
-        <button class="btn secondary">Download Resume</button>
-      </div>
-
-      <div class="icons">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin"></i>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills section" id="skills">
-
-    <h1 class="skills-title">Skills & Technologies</h1>
-    <p class="skills-sub">My technical expertise and proficiency levels</p>
-
-    <!-- 🔥 PROGRESS BARS (UPDATED) -->
-    <div class="proficiency">
-      <h2>Proficiency Levels</h2>
-
-      <div class="bar">
-        <span>HTML/CSS</span>
-        <div class="progress"><div data-width="90%"></div></div>
-      </div>
-
-      <div class="bar">
-        <span>JavaScript</span>
-        <div class="progress"><div data-width="85%"></div></div>
-      </div>
-
-      <div class="bar">
-        <span>Python</span>
-        <div class="progress"><div data-width="75%"></div></div>
-      </div>
-    </div>
-
-    <h2 class="section-heading">Frontend Development</h2>
-    <div class="cards">
-      <div class="card"><i class="fas fa-code"></i><h3>HTML</h3></div>
-      <div class="card"><i class="fas fa-palette"></i><h3>CSS</h3></div>
-      <div class="card"><i class="fas fa-code"></i><h3>JavaScript</h3></div>
-    </div>
-
-    <h2 class="section-heading">Backend Development</h2>
-    <div class="cards">
-      <div class="card"><i class="fas fa-code"></i><h3>Python</h3></div>
-    </div>
-
-    <h2 class="section-heading">Tools & Technologies</h2>
-    <div class="cards">
-      <div class="card"><i class="fas fa-code-branch"></i><h3>Git</h3></div>
-      <div class="card"><i class="fas fa-code"></i><h3>VS Code</h3></div>
-      <div class="card"><i class="fas fa-palette"></i><h3>Figma</h3></div>
-    </div>
-
-    <!-- 🔥 CIRCULAR PROGRESS (UPDATED) -->
-    <div class="overall">
-      <h2>Overall Expertise</h2>
-      <div class="circles">
-
-        <div class="circle-skill" data-percent="90">
-          <span>90%</span>
-          <p>Frontend</p>
+    <div id="main-content">
+      <!-- Navbar -->
+      <nav>
+        <h2>Portfolio</h2>
+        <ul>
+          <li class="active" onclick="showSection('home', this)">Home</li>
+          <li onclick="showSection('skills', this)">Skills</li>
+        </ul>
+      </nav>
+      <!-- HOME -->
+      <section class="home section" id="home">
+        <div class="left"><div class="circle">👩‍💻</div></div>
+        <div class="right">
+          <h3>Hi, I'm</h3>
+          <h1 class="gradient-text">Shrishti</h1>
+          <h2 class="typing"></h2>
+          <div class="buttons">
+            <button class="btn primary">View Projects</button>
+            <button class="btn secondary">Download Resume</button>
+          </div>
+          <div class="icons">
+            <i class="fab fa-github"></i> <i class="fab fa-linkedin"></i>
+          </div>
         </div>
-
-        <div class="circle-skill" data-percent="75">
-          <span>75%</span>
-          <p>Backend</p>
+      </section>
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <h1 class="skills-title">Skills & Technologies</h1>
+        <p class="skills-sub">My technical expertise and proficiency levels</p>
+        <!-- 🔥 PROGRESS BARS (UPDATED) -->
+        <div class="proficiency">
+          <h2>Proficiency Levels</h2>
+          <div class="bar">
+            <span>HTML/CSS</span>
+            <div class="progress"><div data-width="90%"></div></div>
+          </div>
+          <div class="bar">
+            <span>JavaScript</span>
+            <div class="progress"><div data-width="85%"></div></div>
+          </div>
+          <div class="bar">
+            <span>Python</span>
+            <div class="progress"><div data-width="75%"></div></div>
+          </div>
         </div>
-
-        <div class="circle-skill" data-percent="80">
-          <span>80%</span>
-          <p>Database</p>
+        <h2 class="section-heading">Frontend Development</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>HTML</h3>
+          </div>
+          <div class="card">
+            <i class="fas fa-palette"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>JavaScript</h3>
+          </div>
         </div>
-
-      </div>
+        <h2 class="section-heading">Backend Development</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Python</h3>
+          </div>
+        </div>
+        <h2 class="section-heading">Tools & Technologies</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Git</h3>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>VS Code</h3>
+          </div>
+          <div class="card">
+            <i class="fas fa-palette"></i>
+            <h3>Figma</h3>
+          </div>
+        </div>
+        <!-- 🔥 CIRCULAR PROGRESS (UPDATED) -->
+        <div class="overall">
+          <h2>Overall Expertise</h2>
+          <div class="circles">
+            <div class="circle-skill" data-percent="90">
+              <span>90%</span>
+              <p>Frontend</p>
+            </div>
+            <div class="circle-skill" data-percent="75">
+              <span>75%</span>
+              <p>Backend</p>
+            </div>
+            <div class="circle-skill" data-percent="80">
+              <span>80%</span>
+              <p>Database</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-  </section>
-
-</div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
