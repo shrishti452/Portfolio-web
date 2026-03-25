@@ -87,6 +87,7 @@ document.querySelectorAll("button, .icons i, .card").forEach((el) => {
   });
 });
 
+
 function animateCircles(){
     const circles=document.querySelectorAll(".circle-skill");
     circles.forEach(circle=>{

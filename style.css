@@ -289,8 +289,8 @@ nav ul li:hover {
 .circle-skill::before {
   content: "";
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 105px;   /* 🔥 pehle 90px tha → isko badha diya */
+  height: 105px;  /* 🔥 pehle 90px tha → isko badha diya */
   background: #021c2c;
   border-radius: 50%;
 }
