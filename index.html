@@ -1,123 +1,172 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
-    <div id="preloader">
-      <h1 class="loader-text">Shrishti</h1>
-      <div class="dots"><span></span><span></span><span></span></div>
-    </div>
-    <div id="main-content">
-      <!-- Navbar -->
-      <nav>
-        <h2>Portfolio</h2>
-        <ul>
-          <li class="active" onclick="showSection('home', this)">Home</li>
-          <li onclick="showSection('skills', this)">Skills</li>
-        </ul>
-      </nav>
-      <!-- HOME -->
-      <section class="home section" id="home">
-        <div class="left"><div class="circle">👩‍💻</div></div>
-        <div class="right">
-          <h3>Hi, I'm</h3>
-          <h1 class="gradient-text">Shrishti</h1>
-          <h2 class="typing"></h2>
-          <div class="buttons">
-            <button class="btn primary">View Projects</button>
-            <button class="btn secondary">Download Resume</button>
-          </div>
-          <div class="icons">
-            <i class="fab fa-github"></i> <i class="fab fa-linkedin"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+  <div id="preloader">
+    <h1 class="loader-text">Shrishti</h1>
+    <div class="dots"><span></span><span></span><span></span></div>
+  </div>
+  <div id="main-content">
+    <!-- Navbar -->
+    <nav>
+      <h2>Portfolio</h2>
+      <ul>
+        <li class="active" onclick="showSection('home', this)">Home</li>
+        <li onclick="showSection('about', this)">About</li>
+        <li onclick="showSection('skills', this)">Skills</li>
+      </ul>
+    </nav>
+    <!-- HOME -->
+    <section class="home section" id="home">
+      <div class="left">
+        <div class="circle">👩‍💻</div>
+      </div>
+      <div class="right">
+        <h3>Hi, I'm</h3>
+        <h1 class="gradient-text">Shrishti</h1>
+        <h2 class="typing"></h2>
+        <div class="buttons">
+          <button class="btn primary">View Projects</button>
+          <button class="btn secondary">Download Resume</button>
+        </div>
+        <div class="icons">
+          <i class="fab fa-github"></i> <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <h1 class="about-title">About Me</h1>
+
+      <div class="about-content">
+        <p>
+          Hello! I'm a <b>Computer Science student</b> passionate about
+          <b>web development</b> and <b>problem-solving</b>.
+          I'm actively learning full-stack development, practicing
+          <b>data structures and algorithms (DSA)</b>, and building projects
+          to sharpen my coding skills.
+        </p>
+
+        <p>
+          I enjoy working with technologies like <b>JavaScript, Java, and Python</b>.
+          I'm constantly seeking to improve my skills and take on new challenges.
+        </p>
+      </div>
+
+      <!-- 🔥 CARDS -->
+      <div class="about-cards">
+        <div class="about-card">
+          <i class="fas fa-folder"></i>
+          <h2>3+</h2>
+          <p>Projects Built</p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-code"></i>
+          <h2>100+</h2>
+          <p>DSA Problems Solved</p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-cogs"></i>
+          <h2>5+</h2>
+          <p>Technologies Learned</p>
+        </div>
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <h1 class="skills-title">Skills & Technologies</h1>
+      <p class="skills-sub">My technical expertise and proficiency levels</p>
+      <!-- 🔥 PROGRESS BARS (UPDATED) -->
+      <div class="proficiency">
+        <h2>Proficiency Levels</h2>
+        <div class="bar">
+          <span>HTML/CSS</span>
+          <div class="progress">
+            <div data-width="90%"></div>
           </div>
         </div>
-      </section>
-      <!-- SKILLS -->
-      <section class="skills section" id="skills">
-        <h1 class="skills-title">Skills & Technologies</h1>
-        <p class="skills-sub">My technical expertise and proficiency levels</p>
-        <!-- 🔥 PROGRESS BARS (UPDATED) -->
-        <div class="proficiency">
-          <h2 >Proficiency Levels</h2>
-          <div class="bar">
-            <span>HTML/CSS</span>
-            <div class="progress"><div data-width="90%"></div></div>
-          </div>
-          <div class="bar">
-            <span>JavaScript</span>
-            <div class="progress"><div data-width="85%"></div></div>
-          </div>
-          <div class="bar">
-            <span>Python</span>
-            <div class="progress"><div data-width="75%"></div></div>
+        <div class="bar">
+          <span>JavaScript</span>
+          <div class="progress">
+            <div data-width="85%"></div>
           </div>
         </div>
-        <h2 class="section-heading">Frontend Development</h2>
-        <div class="cards">
-          <div class="card">
-            <i class="fas fa-code"></i>
-            <h3>HTML</h3>
-          </div>
-          <div class="card">
-            <i class="fas fa-palette"></i>
-            <h3>CSS</h3>
-          </div>
-          <div class="card">
-            <i class="fas fa-code"></i>
-            <h3>JavaScript</h3>
+        <div class="bar">
+          <span>Python</span>
+          <div class="progress">
+            <div data-width="75%"></div>
           </div>
         </div>
-        <h2 class="section-heading">Backend Development</h2>
-        <div class="cards">
-          <div class="card">
-            <i class="fas fa-code"></i>
-            <h3>Python</h3>
+      </div>
+      <h2 class="section-heading">Frontend Development</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>HTML</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-palette"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>JavaScript</h3>
+        </div>
+      </div>
+      <h2 class="section-heading">Backend Development</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>Python</h3>
+        </div>
+      </div>
+      <h2 class="section-heading">Tools & Technologies</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-code-branch"></i>
+          <h3>Git</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>VS Code</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-palette"></i>
+          <h3>Figma</h3>
+        </div>
+      </div>
+      <!-- 🔥 CIRCULAR PROGRESS (UPDATED) -->
+      <div class="overall">
+        <h2>Overall Expertise</h2>
+        <div class="circles">
+          <div class="circle-skill" data-percent="90">
+            <span>90%</span>
+            <p>Frontend</p>
+          </div>
+          <div class="circle-skill" data-percent="75">
+            <span>75%</span>
+            <p>Backend</p>
+          </div>
+          <div class="circle-skill" data-percent="80">
+            <span>80%</span>
+            <p>Database</p>
           </div>
         </div>
-        <h2 class="section-heading">Tools & Technologies</h2>
-        <div class="cards">
-          <div class="card">
-            <i class="fas fa-code-branch"></i>
-            <h3>Git</h3>
-          </div>
-          <div class="card">
-            <i class="fas fa-code"></i>
-            <h3>VS Code</h3>
-          </div>
-          <div class="card">
-            <i class="fas fa-palette"></i>
-            <h3>Figma</h3>
-          </div>
-        </div>
-        <!-- 🔥 CIRCULAR PROGRESS (UPDATED) -->
-        <div class="overall">
-          <h2>Overall Expertise</h2>
-          <div class="circles">
-            <div class="circle-skill" data-percent="90">
-              <span>90%</span>
-              <p>Frontend</p>
-            </div>
-            <div class="circle-skill" data-percent="75">
-              <span>75%</span>
-              <p>Backend</p>
-            </div>
-            <div class="circle-skill" data-percent="80">
-              <span>80%</span>
-              <p>Database</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <script src="script.js"></script>
-  </body>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

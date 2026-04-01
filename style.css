@@ -311,3 +311,72 @@ nav ul li.active {
 nav ul li.active::after {
   width: 100%;
 }
+/* 🔥 ABOUT SECTION */
+.about {
+  padding: 80px;
+}
+
+.about-title {
+  font-size: 60px;
+  color: cyan;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  max-width: 800px;
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+/* 🔥 ABOUT CARDS */
+.about-cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.about-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.about-card i {
+  font-size: 30px;
+  color: cyan;
+  margin-bottom: 10px;
+}
+
+.about-card h2 {
+  color: cyan;
+  margin: 10px 0;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px cyan;
+}
+/* 🔥 Floating Animation for Home Circle */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px); /* 👈 upar */
+  }
+  100% {
+    transform: translateY(0px); /* 👈 wapas */
+  }
+}
+
+.circle {
+  animation: float 3s ease-in-out infinite;
+}
