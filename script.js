@@ -75,6 +75,7 @@ function showSection(id, el) {
     animateCircles();
   }
 }
+
 // 🔥 Cursor fix (important update)
 document.querySelectorAll("button, .icons i, .card").forEach((el) => {
   el.addEventListener("mouseenter", () => {
@@ -114,3 +115,4 @@ function animateBars() {
     }, 200);
   });
 }
+

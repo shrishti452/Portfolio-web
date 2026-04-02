@@ -23,6 +23,8 @@
         <li class="active" onclick="showSection('home', this)">Home</li>
         <li onclick="showSection('about', this)">About</li>
         <li onclick="showSection('skills', this)">Skills</li>
+        <li onclick="showSection('projects', this)">Projects</li>
+        <li onclick="showSection('contact', this)">Contact</li>
       </ul>
     </nav>
     <!-- HOME -->
@@ -35,7 +37,9 @@
         <h1 class="gradient-text">Shrishti</h1>
         <h2 class="typing"></h2>
         <div class="buttons">
-          <button class="btn primary">View Projects</button>
+          <button class="btn primary" onclick="showSection('projects', document.querySelectorAll('nav ul li')[3])">
+            View Projects
+          </button>
           <button class="btn secondary">Download Resume</button>
         </div>
         <div class="icons">
@@ -164,6 +168,108 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <h1 class="project-title">My Projects</h1>
+      <p class="project-subtitle">Hover over each card to see project details</p>
+
+      <div class="projects-container">
+
+        <div class="project-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h2>E-Commerce Platform</h2>
+            </div>
+            <div class="card-back">
+              <p>Built using HTML, CSS, JS with cart and payment integration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h2>Task Management App</h2>
+            </div>
+            <div class="card-back">
+              <p>Manage daily tasks with reminders and deadlines.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h2>Weather Dashboard</h2>
+            </div>
+            <div class="card-back">
+              <p>Real-time weather using API integration.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <h1 class="contact-title">Get In Touch</h1>
+      <p class="contact-sub">
+        I'm always open to opportunities, collaborations, and conversations.
+      </p>
+
+      <div class="contact-cards">
+
+        <a href="https://www.linkedin.com/in/shrishti-agarwal-516668326?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank">
+          <div class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>@shrishti-agarwal-516668326</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/shrishti452" target="_blank">
+          <div class="contact-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>@shrishti452</p>
+          </div>
+        </a>
+
+        <a href="https://leetcode.com/u/shrishti_ag/" target="_blank">
+          <div class="contact-card">
+            <i class="fas fa-code"></i>
+            <h3>LeetCode</h3>
+            <p>@shrishti_ag</p>
+          </div>
+        </a>
+
+        <a href="mailto:shrishtiagarwal205@gmail.com">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>your@email.com</p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- 🔥 CTA SECTION -->
+      <div class="contact-cta">
+        <h2>Let's Build Something Amazing</h2>
+        <p>
+          Whether you have a project in mind or just want to chat about tech,
+          I'd love to hear from you.
+        </p>
+        <a href="mailto:shrishtiagarwal205@gmail.com">
+          <button class="btn primary">
+            <i class="fas fa-envelope"></i> Send me an email
+          </button>
+        </a>
+      </div>
+
     </section>
   </div>
   <script src="script.js"></script>
