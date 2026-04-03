@@ -5,7 +5,9 @@ body {
   font-family: Arial;
   overflow-x: hidden;
   cursor: none;
-} /* 🔥 Preloader */
+}
+
+/* 🔥 Preloader */
 #preloader {
   position: fixed;
   width: 100%;
@@ -17,18 +19,22 @@ body {
   align-items: center;
   z-index: 1000;
 }
+
 .loader-text {
   font-size: 90px;
   background: linear-gradient(to right, cyan, blue);
   -webkit-background-clip: text;
   color: transparent;
   animation: fade 1.5s ease;
-} /* Loader dots */
+}
+
+/* Loader dots */
 .dots {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
+
 .dots span {
   width: 12px;
   height: 12px;
@@ -36,54 +42,67 @@ body {
   border-radius: 50%;
   animation: bounce 1.4s infinite;
 }
+
 .dots span:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .dots span:nth-child(3) {
   animation-delay: 0.4s;
 }
+
 @keyframes bounce {
+
   0%,
   80%,
   100% {
     transform: scale(0);
     opacity: 0.3;
   }
+
   40% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes fade {
   0% {
     opacity: 0;
     transform: scale(0.8);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
-} /* 🔥 Navbar */
+}
+
+/* 🔥 Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
 }
+
 nav h2 {
   font-size: 22px;
 }
+
 nav ul {
   display: flex;
   list-style: none;
   gap: 35px;
 }
+
 nav ul li {
   cursor: pointer;
   font-size: 16px;
   position: relative;
   transition: 0.3s;
 }
+
 nav ul li::after {
   content: "";
   position: absolute;
@@ -94,31 +113,41 @@ nav ul li::after {
   bottom: -5px;
   transition: 0.3s;
 }
+
 nav ul li:hover::after {
   width: 100%;
 }
+
 nav ul li:hover {
   color: cyan;
-} /* 🔥 Hero Section (MAIN FIX) */
+}
+
+/* 🔥 Hero Section (MAIN FIX) */
 .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 80px;
   height: 90vh;
-} /* LEFT SIDE (circle extreme left) */
+}
+
+/* LEFT SIDE (circle extreme left) */
 .left {
   flex: 1;
   display: flex;
   justify-content: flex-start;
-} /* RIGHT SIDE (content center-right) */
+}
+
+/* RIGHT SIDE (content center-right) */
 .right {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-} /* Circle Avatar */
+}
+
+/* Circle Avatar */
 .circle {
   width: 300px;
   height: 300px;
@@ -129,19 +158,26 @@ nav ul li:hover {
   justify-content: center;
   font-size: 60px;
   box-shadow: 0 0 80px cyan;
-  margin-left: 200px; /* 🔥 left push */
-} /* Gradient Name */
+  margin-left: 200px;
+  /* 🔥 left push */
+}
+
+/* Gradient Name */
 .gradient-text {
   font-size: 90px;
   background: linear-gradient(to right, cyan, blue, purple);
   -webkit-background-clip: text;
   color: transparent;
-} /* Typing */
+}
+
+/* Typing */
 .typing {
   font-size: 32px;
   margin-top: 12px;
   color: cyan;
-} /* Buttons */
+}
+
+/* Buttons */
 .btn {
   padding: 16px 28px;
   margin: 20px 12px 0 0;
@@ -151,32 +187,41 @@ nav ul li:hover {
   transition: all 0.3s ease;
   font-size: 16px;
 }
+
 .primary {
   background: linear-gradient(to right, cyan, blue);
   color: white;
 }
+
 .secondary {
   background: transparent;
   border: 1px solid gray;
   color: white;
 }
+
 .btn:hover {
   transform: translateY(-6px) scale(1.08);
   box-shadow: 0 0 25px cyan;
-} /* 🔥 ICONS (UPDATED) */
+}
+
+/* 🔥 ICONS (UPDATED) */
 .icons {
   margin-top: 20px;
 }
+
 .icons i {
   margin-right: 18px;
   font-size: 26px;
   cursor: pointer;
   transition: 0.3s;
 }
+
 .icons i:hover {
   color: cyan;
   transform: scale(1.4);
-} /* 🔥 Custom Cursor */
+}
+
+/* 🔥 Custom Cursor */
 .cursor {
   width: 30px;
   height: 30px;
@@ -187,6 +232,7 @@ nav ul li:hover {
   transform: translate(-50%, -50%);
   transition: 0.15s ease;
 }
+
 .cursor-dot {
   width: 6px;
   height: 6px;
@@ -195,44 +241,61 @@ nav ul li:hover {
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
-} /* 🔥 Skills Section */
-.skills {
-  padding: 80px;
 }
+
+/* 🔥 Skills Section */
+.skills {
+  padding: 40px 80px 80px;
+}
+
 .skills-title {
   font-size: 60px;
   color: cyan;
+  margin-top: 20px;
+  /* 🔥 upar shift */
+  margin-bottom: 20px;
 }
+
 .skills-sub {
   color: gray;
+
+  margin-top: 5px;
   margin-bottom: 40px;
-} /* 🔥 Proficiency */
+}
+
+/* 🔥 Proficiency */
 .proficiency {
   background: #111;
   padding: 30px;
   border-radius: 15px;
   margin-bottom: 50px;
 }
+
 .bar {
   margin: 20px 0;
 }
+
 .progress {
   height: 8px;
   background: #333;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .progress div {
   height: 100%;
   width: 0;
   background: linear-gradient(to right, cyan, blue);
   transition: width 1.5s ease;
-} /* 🔥 Cards */
+}
+
+/* 🔥 Cards */
 .cards {
   display: flex;
   gap: 25px;
   margin: 20px 0 40px;
 }
+
 .card {
   background: #111;
   padding: 30px;
@@ -241,29 +304,39 @@ nav ul li:hover {
   width: 200px;
   transition: 0.3s;
 }
+
 .card i {
   font-size: 30px;
   margin-bottom: 10px;
   color: cyan;
-} /* 🔥 HOVER ANIMATION (gol gol move 🔥) */
+}
+
+/* 🔥 HOVER ANIMATION (gol gol move 🔥) */
 .card:hover i {
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 20px cyan;
-} /* 🔥 Headings */
+}
+
+/* 🔥 Headings */
 .section-heading {
   color: #5aa9ff;
-} /* 🔥 Overall */
+}
+
+/* 🔥 Overall */
 .overall {
   margin-top: 60px;
   padding: 40px;
@@ -271,11 +344,13 @@ nav ul li:hover {
   border-radius: 15px;
   text-align: center;
 }
+
 .circles {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
 }
+
 .circle-skill {
   width: 120px;
   height: 120px;
@@ -286,40 +361,52 @@ nav ul li:hover {
   align-items: center;
   background: conic-gradient(cyan 0deg, #222 0deg);
 }
+
 .circle-skill::before {
   content: "";
   position: absolute;
-  width: 105px;   /* 🔥 pehle 90px tha → isko badha diya */
-  height: 105px;  /* 🔥 pehle 90px tha → isko badha diya */
+  width: 105px;
+  /* 🔥 pehle 90px tha → isko badha diya */
+  height: 105px;
+  /* 🔥 pehle 90px tha → isko badha diya */
   background: #021c2c;
   border-radius: 50%;
 }
+
 .circle-skill span,
 .circle-skill p {
   position: relative;
   z-index: 2;
 }
+
 .section {
   display: none;
 }
+
 #home {
   display: flex;
 }
+
 nav ul li.active {
   color: cyan;
 }
+
 nav ul li.active::after {
   width: 100%;
 }
+
 /* 🔥 ABOUT SECTION */
 .about {
-  padding: 80px;
+  padding: 40px 80px 80px;
 }
 
 .about-title {
   font-size: 60px;
   color: cyan;
-  margin-bottom: 30px;
+
+  margin-top: 20px;
+  /* 🔥 upar shift */
+  margin-bottom: 20px;
 }
 
 .about-content {
@@ -364,35 +451,46 @@ nav ul li.active::after {
   transform: translateY(-10px);
   box-shadow: 0 0 20px cyan;
 }
+
 /* 🔥 Floating Animation for Home Circle */
 @keyframes float {
   0% {
     transform: translateY(0px);
   }
+
   50% {
-    transform: translateY(-15px); /* 👈 upar */
+    transform: translateY(-15px);
+    /* 👈 upar */
   }
+
   100% {
-    transform: translateY(0px); /* 👈 wapas */
+    transform: translateY(0px);
+    /* 👈 wapas */
   }
 }
 
 .circle {
   animation: float 3s ease-in-out infinite;
 }
+
 /* 🔥 CONTACT SECTION */
 .contact {
-  padding: 80px;
+  padding: 40px 80px 80px;
 }
 
 .contact-title {
   font-size: 60px;
   color: cyan;
+  margin-top: 20px;
+  /* 🔥 upar shift */
+  margin-bottom: 20px;
 }
 
 .contact-sub {
   color: gray;
   margin: 10px 0 40px;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 /* Cards Layout */
@@ -459,32 +557,39 @@ nav ul li.active::after {
 
 /* 🔥 PROJECTS SECTION */
 .projects {
-  padding: 80px;
+  padding: 40px 80px 80px;
   text-align: center;
 }
 
 .project-title {
   font-size: 60px;
   color: cyan;
+  margin-top: 20px;
+  /* 🔥 upar shift */
+  margin-bottom: 20px;
 }
 
 .project-subtitle {
   color: gray;
-  margin-bottom: 50px;
+
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 /* Layout */
 .projects-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
+  /* 🔥 more space between cards */
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 /* Card */
 .project-card {
-  width: 280px;
-  height: 180px;
+  width: 320px;
+  height: 220px;
   perspective: 1000px;
 
   opacity: 0;
@@ -496,6 +601,7 @@ nav ul li.active::after {
 .project-card:nth-child(2) {
   animation-delay: 0.3s;
 }
+
 .project-card:nth-child(3) {
   animation-delay: 0.6s;
 }
@@ -509,9 +615,14 @@ nav ul li.active::after {
   transform-style: preserve-3d;
 }
 
-/* Flip */
 .project-card:hover .card-inner {
   transform: rotateY(180deg);
+}
+
+/* Flip */
+.project-card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
 }
 
 /* Front & Back */
