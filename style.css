@@ -403,7 +403,6 @@ nav ul li.active::after {
 .about-title {
   font-size: 60px;
   color: cyan;
-
   margin-top: 20px;
   /* 🔥 upar shift */
   margin-bottom: 20px;
