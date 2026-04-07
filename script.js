@@ -63,13 +63,24 @@ document.querySelectorAll("button, .icons span").forEach((el) => {
 function showSection(id, el) {
   document.querySelectorAll(".section").forEach((sec) => {
     sec.style.display = "none";
+    sec.classList.remove("show");   // 🔥 added
   });
-  document.getElementById(id).style.display = id === "home" ? "flex" : "block";
+
+  const current = document.getElementById(id);
+
+  current.style.display = id === "home" ? "flex" : "block";
+
+  // 🔥 animation trigger
+  setTimeout(() => {
+    current.classList.add("show");  // 🔥 added
+  }, 10);
+
   document.querySelectorAll("nav ul li").forEach((li) => {
     li.classList.remove("active");
   });
   el.classList.add("active");
-  // 🔥 trigger animations
+
+  // 🔥 trigger animations (same as your code)
   if (id === "skills") {
     animateBars();
     animateCircles();
@@ -116,3 +127,7 @@ function animateBars() {
   });
 }
 
+// 🔥 First load animation
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("home").classList.add("show");
+});
