@@ -271,6 +271,31 @@ nav ul li:hover {
   margin-bottom: 50px;
 }
 
+.proficiency h2 {
+  margin-bottom: 35px;
+}
+
+/* Grid layout */
+.proficiency-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Each column */
+.proficiency-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Bars */
+.bar span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
 .bar {
   margin: 20px 0;
 }
@@ -287,6 +312,7 @@ nav ul li:hover {
   width: 0;
   background: linear-gradient(to right, cyan, blue);
   transition: width 1.5s ease;
+  border-radius: 10px;
 }
 
 /* 🔥 Cards */
