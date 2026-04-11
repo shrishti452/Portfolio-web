@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  background: #000;
   color: white;
   font-family: Arial;
   overflow-x: hidden;
   cursor: none;
+
+  background: linear-gradient(135deg, #000000, #021c2c, #000000);
 }
 #bg {
   position: fixed;
@@ -238,7 +239,7 @@ nav ul li:hover {
 .cursor {
   width: 30px;
   height: 30px;
-  border: 2px solid cyan;
+ border: 2px solid rgba(0,255,255,0.6);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -731,4 +732,19 @@ nav ul li.active::after {
 /* 🔥 Button spacing inside card */
 .card-back button {
   margin-top: 15px;
+}
+/* 🔥 GLASSMORPHISM EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  transition: 0.3s;
+}
+
+.glass:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 40px cyan;
 }
