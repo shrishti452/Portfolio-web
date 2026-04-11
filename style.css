@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+* {
+  cursor: none !important;
+}
 
 /* 🔥 Preloader */
 #preloader {
@@ -231,7 +234,7 @@ nav ul li:hover {
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.15s ease;
+    transition: transform 0.15s ease, border-color 0.2s;
 }
 
 .cursor-dot {
@@ -242,6 +245,7 @@ nav ul li:hover {
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
+   transition: transform 0.15s ease;
 }
 
 /* 🔥 Skills Section */

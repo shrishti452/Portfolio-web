@@ -131,3 +131,13 @@ function animateBars() {
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("home").classList.add("show");
 });
+
+document.addEventListener("mousedown", () => {
+  cursor.style.transform = "translate(-50%, -50%) scale(2.5)";
+  dot.style.transform = "translate(-50%, -50%) scale(2)";
+});
+
+document.addEventListener("mouseup", () => {
+  cursor.style.transform = "translate(-50%, -50%) scale(1)";
+  dot.style.transform = "translate(-50%, -50%) scale(1)";
+});
