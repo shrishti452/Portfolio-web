@@ -94,6 +94,7 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 35px;
+  margin-right: 100px; /* 👈 ADD THIS */
 }
 
 nav ul li {
