@@ -723,3 +723,12 @@ nav ul li.active::after {
   transform: translateY(0);
   transition: all 0.8s ease;
 }
+/* 🔥 Project hover glow */
+.project-card:hover {
+  box-shadow: 0 0 30px cyan;
+}
+
+/* 🔥 Button spacing inside card */
+.card-back button {
+  margin-top: 15px;
+}
