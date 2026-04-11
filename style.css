@@ -40,13 +40,46 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   animation: fade 1.5s ease;
+    margin-bottom: 5px;
+}
+
+/* 🔥 Loading Line */
+.loader-line {
+  width: 260px;
+  height: 6px;   /* 👈 pehle 4px tha → ab thodi moti */
+  background: rgba(255,255,255,0.1);
+  margin-top: 15px;  /* 👈 spacing reduce */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loader-line span {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(to right, cyan, blue, purple);
+  border-radius: 10px;
+  animation: loadingMove 1.5s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes loadingMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Loader dots */
 .dots {
   display: flex;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 8px;   /* 👈 pehle 15px tha → ab compact */
 }
 
 .dots span {
