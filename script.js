@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       loader.style.display = "none";
     }, 500);
-  }, 2000);
+  }, 1200);
 });
 
 // 🔥 Typing Animation (improved smooth)
