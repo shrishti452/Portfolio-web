@@ -35,43 +35,49 @@ body {
 }
 
 .loader-text {
-  font-size: 90px;
-  background: linear-gradient(to right, cyan, blue);
+  font-size: 140px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  background: linear-gradient(to right, cyan, blue, purple);
   -webkit-background-clip: text;
   color: transparent;
-  animation: fade 1.5s ease;
-    margin-bottom: 5px;
+  margin-bottom: 10px;
+
+  animation: fade 1.5s ease, glowPulse 2s infinite alternate;
 }
 
 /* 🔥 Loading Line */
 .loader-line {
-  width: 260px;
-  height: 6px;   /* 👈 pehle 4px tha → ab thodi moti */
-  background: rgba(255,255,255,0.1);
-  margin-top: 15px;  /* 👈 spacing reduce */
-  border-radius: 10px;
+  width: 320px;
+  /* 👈 bigger */
+  height: 10px;
+  /* 👈 from 6px → more bold */
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
 .loader-line span {
   display: block;
   height: 100%;
-  width: 40%;
-  background: linear-gradient(to right, cyan, blue, purple);
+  width: 120px;
+  /* 👈 fixed width for better visibility */
+  background: linear-gradient(to right, transparent, cyan, blue, purple, transparent);
   border-radius: 10px;
-  animation: loadingMove 1.5s infinite ease-in-out;
+  animation: loadingMove 1.2s infinite linear;
+  /* 👈 faster + smooth */
 }
 
 /* Animation */
 @keyframes loadingMove {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
   }
-  50% {
-    transform: translateX(150%);
-  }
+
   100% {
-    transform: translateX(-100%);
+    transform: translateX(300%);
   }
 }
 
@@ -79,15 +85,19 @@ body {
 .dots {
   display: flex;
   gap: 10px;
-  margin-top: 8px;   /* 👈 pehle 15px tha → ab compact */
+  margin-top: 8px;
+  /* 👈 pehle 15px tha → ab compact */
 }
 
 .dots span {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  /* 👈 from 12px */
+  height: 18px;
   background: cyan;
   border-radius: 50%;
   animation: bounce 1.4s infinite;
+  box-shadow: 0 0 10px cyan;
+  /* 👈 glow effect */
 }
 
 .dots span:nth-child(2) {
@@ -125,12 +135,13 @@ body {
   }
 }
 
+
 /* 🔥 Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
- padding: 20px 40px 20px 20px;
+  padding: 20px 40px 20px 20px;
 }
 
 nav h2 {
@@ -142,7 +153,8 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 35px;
-  margin-right: 100px; /* 👈 ADD THIS */
+  margin-right: 100px;
+  /* 👈 ADD THIS */
 }
 
 nav ul li {
@@ -274,12 +286,12 @@ nav ul li:hover {
 .cursor {
   width: 30px;
   height: 30px;
- border: 2px solid rgba(0,255,255,0.6);
+  border: 2px solid rgba(0, 255, 255, 0.6);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
-    transition: transform 0.15s ease, border-color 0.2s;
+  transition: transform 0.15s ease, border-color 0.2s;
 }
 
 .cursor-dot {
@@ -290,7 +302,7 @@ nav ul li:hover {
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
-   transition: transform 0.15s ease;
+  transition: transform 0.15s ease;
 }
 
 /* 🔥 Skills Section */
@@ -759,6 +771,7 @@ nav ul li.active::after {
   transform: translateY(0);
   transition: all 0.8s ease;
 }
+
 /* 🔥 Project hover glow */
 .project-card:hover {
   box-shadow: 0 0 30px cyan;
@@ -768,6 +781,7 @@ nav ul li.active::after {
 .card-back button {
   margin-top: 15px;
 }
+
 /* 🔥 GLASSMORPHISM EFFECT */
 .glass {
   background: rgba(255, 255, 255, 0.05);
