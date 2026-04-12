@@ -797,3 +797,125 @@ nav ul li.active::after {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 0 40px cyan;
 }
+
+
+
+/* 🔥 RESPONSIVE FIX (NO CHANGE IN ORIGINAL DESIGN) */
+@media (max-width: 1024px) {
+
+  .home {
+    padding: 0 40px;
+  }
+
+  .circle {
+    margin-left: 100px;
+  }
+
+  .gradient-text {
+    font-size: 70px;
+  }
+
+}
+
+/* 📱 MOBILE DEVICES */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    padding: 15px;
+  }
+
+  nav h2 {
+    margin-left: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  /* Home layout fix */
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .left {
+    justify-content: center;
+  }
+
+  .circle {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .right {
+    align-items: center;
+  }
+
+  .gradient-text {
+    font-size: 55px;
+  }
+
+  .typing {
+    font-size: 22px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 80px;
+  }
+
+  .loader-line {
+    width: 220px;
+  }
+
+  /* Sections padding */
+  .skills,
+  .about,
+  .projects,
+  .contact {
+    padding: 30px 20px;
+  }
+
+  /* Cards stack */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Projects */
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Contact grid */
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* 📱 SMALL PHONES */
+@media (max-width: 480px) {
+
+  .loader-text {
+    font-size: 60px;
+  }
+
+  .gradient-text {
+    font-size: 40px;
+  }
+
+  .circle {
+    width: 180px;
+    height: 180px;
+  }
+
+}
