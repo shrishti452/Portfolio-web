@@ -1020,39 +1020,73 @@ nav ul li.active::after {
   }
 
   nav ul {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  white-space: nowrap;
-  width: 100%;
-  padding-bottom: 5px;
-}
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 5px;
+  }
 
-nav ul::-webkit-scrollbar {
-  display: none;
-}
+  nav ul::-webkit-scrollbar {
+    display: none;
+  }
 
 
-.circles {
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+  .circles {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
 
-.circle-skill {
-  width: 90px;
-  height: 90px;
-}
+  .circle-skill {
+    width: 90px;
+    height: 90px;
+  }
 
-.circle-skill::before {
-  width: 75px;
-  height: 75px;
-}
+  .circle-skill::before {
+    width: 75px;
+    height: 75px;
+  }
 
-.circle-skill span {
-  font-size: 14px;
-}
+  .circle-skill span {
+    font-size: 14px;
+  }
 
-.circle-skill p {
-  font-size: 12px;
-}
+  .circle-skill p {
+    font-size: 12px;
+  }
+
+  /* 🔥 PROJECT FIX (MOBILE) */
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .card-inner {
+    transform: none !important;
+  }
+
+  .project-card:hover .card-inner {
+    transform: none !important;
+  }
+
+  /* 👇 front & back ko normal flow me lao */
+  .card-front,
+  .card-back {
+    position: relative;
+    height: auto;
+    transform: none;
+  }
+
+  /* 👇 back side ko niche dikhao */
+  .card-back {
+    margin-top: 10px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
 }
