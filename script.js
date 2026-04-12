@@ -46,19 +46,6 @@ document.addEventListener("mousemove", (e) => {
   dot.style.top = y + "px";
   dot.style.left = x + "px";
 });
-// 🔥 Cursor Hover Effects (smooth & professional)
-document.querySelectorAll("button, .icons span").forEach((el) => {
-  el.addEventListener("mouseenter", () => {
-    cursor.style.transform = "translate(-50%, -50%) scale(1.8)";
-    cursor.style.borderColor = "white";
-    dot.style.transform = "translate(-50%, -50%) scale(1.5)";
-  });
-  el.addEventListener("mouseleave", () => {
-    cursor.style.transform = "translate(-50%, -50%) scale(1)";
-    cursor.style.borderColor = "cyan";
-    dot.style.transform = "translate(-50%, -50%) scale(1)";
-  });
-});
 // 🔥 SECTION SWITCH
 function showSection(id, el) {
   document.querySelectorAll(".section").forEach((sec) => {
