@@ -47,34 +47,6 @@ document.addEventListener("mousemove", (e) => {
   dot.style.top = y + "px";
   dot.style.left = x + "px";
 });
-/*let lastTime = 0;
-
-document.addEventListener("mousemove", (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
-
-  // 🔥 existing cursor
-  cursor.style.top = y + "px";
-  cursor.style.left = x + "px";
-  dot.style.top = y + "px";
-  dot.style.left = x + "px";
-
-  // 🔥 PERFORMANCE CONTROL
-  const now = Date.now();
-  if (now - lastTime < 20) return;
-  lastTime = now;
-
-  // ✨ TRAIL EFFECT
-  const trail = document.createElement("div");
-  trail.classList.add("trail");
-
-  trail.style.left = x + "px";
-  trail.style.top = y + "px";
-
-  document.body.appendChild(trail);
-
-  setTimeout(() => trail.remove(), 600);
-});*/
 // 🔥 SECTION SWITCH
 function showSection(id, el) {
   document.querySelectorAll(".section").forEach((sec) => {
@@ -204,52 +176,4 @@ window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
-
-// ✨ MAGIC WAND CURSOR TRAIL
-/*document.addEventListener("mousemove", (e) => {
-  const trail = document.createElement("div");
-  trail.classList.add("trail");
-
-  trail.style.left = e.clientX + "px";
-  trail.style.top = e.clientY + "px";
-
-  document.body.appendChild(trail);
-
-  setTimeout(() => {
-    trail.remove();
-  }, 600);
-});
-
-
-// 💥 CLICK BURST EFFECT
-document.addEventListener("click", (e) => {
-  for (let i = 0; i < 8; i++) {
-    const particle = document.createElement("div");
-    particle.classList.add("trail");
-
-    particle.style.left = e.clientX + "px";
-    particle.style.top = e.clientY + "px";
-
-    // random direction
-    const x = (Math.random() - 0.5) * 100;
-    const y = (Math.random() - 0.5) * 100;
-
-    particle.animate(
-      [
-        { transform: "translate(0,0)", opacity: 1 },
-        { transform: `translate(${x}px, ${y}px)`, opacity: 0 }
-      ],
-      {
-        duration: 600,
-        easing: "ease-out"
-      }
-    );
-
-    document.body.appendChild(particle);
-
-    setTimeout(() => {
-      particle.remove();
-    }, 600);
-  }
-});*/
 
